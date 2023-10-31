@@ -81,13 +81,6 @@ def placePage():
     # return jsonify(data[placeName])
 
 
-@app.route("/process", methods=["POST"])
-def process():
-    data = request.form.get("data")
-    # process the data using Python code
-    result = data
-    return str(result)*2
-
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
