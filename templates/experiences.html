@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block experienceBlock %}
+
+<div id="experiences-section" >
+    <h1>Share Your Experiences</h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1"><b>&nbsp;Email </b> </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="leo@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1"> <b>&nbsp;Place</b></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Manali">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1"><b>&nbsp;Your glimpse</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="color: grey;" 
+            placeholder="I have been there this June,and found the most relaxing views and breathtaking flow of beas river.the awesome white ice on the mountains,the delicious fruits which you cant taste like this at anywhere else in India ..."></textarea>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload images</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+        </div>
+    </form>
+    <p>Share your travel experiences with the world!</p>
+</div>
+
+
+
+{% endblock %}

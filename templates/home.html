@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block homeBlock %}
+
+<div id="home-section">
+    <h1>Welcome to Pack Your Bags!</h1>
+    <form class="d-flex" action="/places" method="get">
+      <input class="form-control me-2" id="input" name="query" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <p></p>
+    <div id="output"></div> 
+    <div id="middle-content">
+      {{ cust_cont | safe  }}
+  </div>
+  </div>
+ 
+
+  <!-- THis is my carousel  -->
+  <div class="container w-50">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{url_for('static', filename='alleppey-kerala.jpg')}}" class="d-block w-100" alt="..."/>
+            <h2 class="carouselPlaceName">Alleppey, Kerala</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename='Dudhsagar-goa.jpg')}}" class="d-block w-100" alt="..."/>
+            <h2 class="carouselPlaceName">Dudhsagar falls, Goa</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename='taj mahal-agra.jpg')}}" class="d-block w-100" alt="..."/>
+            <h2 class="carouselPlaceName">Taj Mahal, Agra</h2>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+  </div>
+
+
+{% endblock homeBlock %}

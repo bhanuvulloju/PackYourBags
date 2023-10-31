@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#home-section, #experiences-section, #about-section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+#home-section {
+    background-color: #f0f0f0;
+}
+
+.form-group{
+    padding: 20px;
+}
+#exampleFormControlTextarea1{
+    font-family: 'Times New Roman', Times, serif;
+}
+#middle-content{
+    width: 50%;
+    margin-left: 25%;
+}
+.carouselPlaceName{
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+}
