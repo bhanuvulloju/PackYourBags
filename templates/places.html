@@ -8,7 +8,45 @@
       <input class="form-control me-2" id="input" name="query" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-
+    <p></p>
+    <div id="output"></div> 
+    <div id="middle-content">
+      ~~~ &emsp;  ~~~ &emsp;  ~~~ &emsp; ~~~
+      <h1>  {{response['Place']}}</h1>
+      ~~~ &emsp;  ~~~ &emsp;  ~~~ &emsp; ~~~
+      <h2>🗺️{{response['City']}}, {{response['State']}}</h2>
+      <p></p>
+      <h3>{{response['Description']}}</h3>
+      <p></p>
+      
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="p-3 border bg-light">
+              <h4>⭐Rating - {{response['Rating']}}</h4>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">
+              <h4>⏱️Duration : {{response['Duration']}}</h4>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">
+              <h4>👨‍👩‍👧‍👦Visitors per year : {{response['No of visitors per year']}}</h4>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">
+              <h4>🏄‍♂️Best Time To Visit : {{response['Best time to visit']}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p></p>
+      <h4>💸Ticket fare : {{response['Price']}}</h4>
+      
+  </div>
   </div>
  
 
